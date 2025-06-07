@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональное резюме | Лучший программист</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .floating { 
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .language-flag {
+            width: 30px;
+            height: 20px;
+            display: inline-block;
+            margin-right: 10px;
+            border-radius: 3px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Animated Hero Section -->
+    <div class="parallax bg-gradient-to-r from-red-600 to-blue-500 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="floating inline-block mb-8">
+                <img src="your-photo-filename.jpg" alt="Марк" class="rounded-full border-4 border-white shadow-xl w-32 h-32">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-pulse">Марк</h1>
+            <p class="text-xl md:text-2xl mb-8">Юный программист | 9 лет</p>
+            <button id="ctaButton" class="bg-white text-red-600 font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-red-100 transition duration-300 transform hover:scale-105">
+                Узнать больше
+            </button>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="py-16 bg-white" id="skills">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Мои Навыки</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 3D Modeling -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-l-4 border-blue-500">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">3D моделирование в Tinkercad</h3>
+                    <p class="text-gray-600 mb-4">Создаю сложные 3D модели с точностью и креативным подходом.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="skill-bar bg-blue-600 h-2.5 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <!-- VR Development -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-l-4 border-purple-500">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Виртуальная реальность в CoSpaces</h3>
+                    <p class="text-gray-600 mb-4">Разрабатываю иммерсивные VR-проекты и интерактивные среды.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="skill-bar bg-purple-600 h-2.5 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <!-- Game Development -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-l-4 border-green-500">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Разработка игр в Kodu и Construct 3</h3>
+                    <p class="text-gray-600 mb-4">Создаю увлекательные игры от концепции до реализации.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="skill-bar bg-green-600 h-2.5 rounded-full" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <!-- Animation -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-l-4 border-yellow-500">
+                    <div class="text-yellow-600 text-4xl mb-4">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Анимация в Animaker</h3>
+                    <p class="text-gray-600 mb-4">Производство качественных анимационных видео и роликов.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="skill-bar bg-yellow-600 h-2.5 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <!-- Typing Speed -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-l-4 border-red-500">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Скорость печати</h3>
+                    <p class="text-gray-600 mb-4">Постоянно улучшаю скорость и точность печати с помощью Stamina.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="skill-bar bg-red-600 h-2.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-l-4 border-indigo-500">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Изучение языков</h3>
+                    <p class="text-gray-600 mb-4">
+                        <span class="language-flag bg-blue-700"></span> Английский (продвинутый)<br>
+                        <span class="language-flag bg-red-600"></span> Китайский (начальный уровень)
+                    </p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="skill-bar bg-indigo-600 h-2.5 rounded-full" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="py-16 bg-gray-100" id="portfolio">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Мои Проекты</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 3D Models -->
+                <div class="portfolio-item relative overflow-hidden rounded-lg shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="3D Models in Tinkercad" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white text-xl font-bold">3D Модели в Tinkercad</h3>
+                            <p class="text-gray-300">Инновационные и функциональные 3D дизайны</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VR Projects -->
+                <div class="portfolio-item relative overflow-hidden rounded-lg shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="VR Projects" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white text-xl font-bold">VR в CoSpaces</h3>
+                            <p class="text-gray-300">Иммерсивные виртуальные среды</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Games -->
+                <div class="portfolio-item relative overflow-hidden rounded-lg shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Games" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white text-xl font-bold">Игры в Construct 3</h3>
+                            <p class="text-gray-300">Захватывающие 2D игры с механиками</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hobbies Section -->
+    <div class="py-16 bg-red-600 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Мои Хобби</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-start">
+                    <div class="text-4xl mr-6">
+                        <i class="fas fa-tennis-ball"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Теннис</h3>
+                        <p>Активно занимаюсь большим теннисом, улучшая физическую форму и стратегическое мышление.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="text-4xl mr-6">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Скоростная печать</h3>
+                        <p>Регулярно тренируюсь в Stamina, повышая скорость и точность печати до профессионального уровня.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="text-4xl mr-6">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Изучение языков</h3>
+                        <p>Совершенствую английский для IT-коммуникаций и изучаю китайский для расширения горизонтов.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="text-4xl mr-6">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Технологические эксперименты</h3>
+                        <p>Исследую новые инструменты и технологии в программировании, 3D и геймдизайне.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div class="text-4xl mr-6">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3">Любимая еда</h3>
+                        <p>Яблоки, конфеты, суп, борщ и много других вкусных вещей!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Свяжитесь со мной</h2>
+            
+            <div class="bg-gray-50 rounded-xl shadow-md p-8">
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Ваше имя</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 font-medium mb-2">Тема</label>
+                        <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Сообщение</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl">
+                        Отправить сообщение
+                    </button>
+                </form>
+            </div>
+            
+            <div class="mt-12 flex justify-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-blue-600 text-3xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-blue-500 text-3xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-pink-500 text-3xl">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-blue-400 text-3xl">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fun Facts Modal -->
+    <div id="funFactsModal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Интересные факты</h3>
+                    <button id="closeModal" class="text-gray-500 hover:text-gray-700 text-3xl">&times;</button>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-bold text-blue-800 mb-2">
+                            <i class="fas fa-trophy mr-2"></i> Достижения в 3D моделировании
+                        </h4>
+                        <p>Создал более 50 сложных моделей в Tinkercad, некоторые из которых используются в образовательных целях.</p>
+                    </div>
+                    
+                    <div class="p-4 bg-purple-50 rounded-lg">
+                        <h4 class="font-bold text-purple-800 mb-2">
+                            <i class="fas fa-vr-cardboard mr-2"></i> VR проекты
+                        </h4>
+                        <p>Разработал интерактивное VR-портфолио и несколько образовательных VR-сред в CoSpaces.</p>
+                    </div>
+                    
+                    <div class="p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-bold text-green-800 mb-2">
+                            <i class="fas fa-gamepad mr-2"></i> Игровая разработка
+                        </h4>
+                        <p>Опубликовал 3 игры, одна из которых имеет более 1,000 скачиваний.</p>
+                    </div>
+                    
+                    <div class="p-4 bg-yellow-50 rounded-lg">
+                        <h4 class="font-bold text-yellow-800 mb-2">
+                            <i class="fas fa-keyboard mr-2"></i> Скорость печати
+                        </h4>
+                        <p>Средняя скорость печати - 85 слов в минуту с точностью 98%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Марк. Все права защищены.</p>
+            <p class="mt-2 text-gray-400">Разработано с <i class="fas fa-heart text-red-400"></i> и инновационными технологиями</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate skill bars on scroll
+            const skillBars = document.querySelectorAll('.skill-bar');
+            const skillsSection = document.getElementById('skills');
+            
+            const animateSkills = () => {
+                if (window.scrollY + window.innerHeight > skillsSection.offsetTop + 100) {
+                    skillBars.forEach(bar => {
+                        bar.style.width = bar.style.width; // This triggers the CSS transition
+                    });
+                }
+            };
+            
+            window.addEventListener('scroll', animateSkills);
+            animateSkills(); // Check on load
+            
+            // Modal functionality
+            const ctaButton = document.getElementById('ctaButton');
+            const funFactsModal = document.getElementById('funFactsModal');
+            const closeModal = document.getElementById('closeModal');
+            
+            ctaButton.addEventListener('click', () => {
+                funFactsModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closeModal.addEventListener('click', () => {
+                funFactsModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            });
+            
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Сообщение отправлено! Я свяжусь с вами в ближайшее время.');
+                contactForm.reset();
+            });
+            
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
